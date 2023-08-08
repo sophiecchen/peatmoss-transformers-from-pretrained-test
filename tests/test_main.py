@@ -4,17 +4,11 @@
 # run with pytest
 
 import unittest
-from py_test_pack import main
+from peatmoss_transformers_test import main
 
 class Test(unittest.TestCase):
-    def test_main_one(self):
-        self.assertEqual(main.regex("cat"), True)
-
-    def test_main_two(self):
-        self.assertEqual(main.regex("“hello”"), False)
-
-    def test_main_three(self):
-        self.assertEqual(main.sentence(), 0)
+    def test_main(self):
+        self.assertEqual(main.from_import(), 0)
 
 if __name__ == '__main__':
     unittest.main()

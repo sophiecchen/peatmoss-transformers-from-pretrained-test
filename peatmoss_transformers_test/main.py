@@ -1,13 +1,10 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-from transformers import WavLMConfig, WavLMModel
+from transformers import BertModel
 
 def from_import():
-    one = ""
-    two = SentenceTransformer(one)
-
-    three = ""
-    four = (three)
+    one = "bert-base-uncased"
+    two = BertModel.from_pretrained(one)
 
     return 0

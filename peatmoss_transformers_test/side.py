@@ -4,7 +4,7 @@
 import transformers
 
 def pure_import():
-    real = "all-MiniLM-L6-v2"
-    model = sentence_transformers.SentenceTransformer(real)
+    real = "bert-base-uncased"
+    model = transformers.BertModel.from_pretrained(real)
 
     return 0
